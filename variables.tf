@@ -1,17 +1,13 @@
-variable "sg_name" {
-  type = string
-}
-
-variable "sg_description" {
-  type = string
-}
-
 variable "project" {
   type = string
 }
 
 variable "environment" {
-  type = string
+  default = string
+}
+
+variable "vpc_id" {
+  default = string
 }
 
 variable "sg_tags" {
@@ -20,7 +16,10 @@ variable "sg_tags" {
   }
 }
 
-variable "vpc_id" {
+variable "sg_name" {
   type = string
 }
 
+variable "sg_description" {
+  type = string
+}
