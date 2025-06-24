@@ -3,11 +3,11 @@ variable "project" {
 }
 
 variable "environment" {
-  default = string
+  type = string
 }
 
 variable "vpc_id" {
-  default = string
+  type = string
 }
 
 variable "sg_tags" {
